@@ -42,7 +42,7 @@ This is a simple Discord music bot built utilizing Python, Docker, and yt-dlp. I
 2.  Go to the ****Docker**** tab and click ****Add Container****.
 3.  Set the ****Repository**** to: sticio/discord-music-bot
 4.  Under ****Environment Variables****, add:
-5.  ****Key****: \`DISCORD<sub>BOT</sub><sub>TOKEN</sub>\`
+5.  ****Key****: \`DISCORD_BOT_TOKEN`
 6.  ****Value****: \`your-bot-token-here\`
 7.  Click ****Apply**** and start the container.
 
