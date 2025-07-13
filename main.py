@@ -93,10 +93,11 @@ def after_play(ctx, error):
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
-    for guild in bot.guilds:
-        for vc in guild.voice_channels:
-            if vc.members and bot.user in vc.members:
-                await vc.connect(reconnect=True)
+    # Automatic reconnect to voice is risky here — disable it for now
+    # for guild in bot.guilds:
+    #     for vc in guild.voice_channels:
+    #         if vc.members and bot.user in vc.members:
+    #             await vc.connect(reconnect=True)
 
 @bot.command(name='play', help='Plays a song from YouTube')
 async def play(ctx, *, query):
